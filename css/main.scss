@@ -51,7 +51,7 @@ header {
                 padding: 0 1em;
             }
         }
-    }
+    }    
 }
 
 .social-header, .hero-design {
@@ -65,11 +65,15 @@ header {
     display: grid;
     text-align: center;
     padding: 4em;
+
+    h4 {
+        letter-spacing: 0.2em;
+    }
+
 }
 
+
 .meet {
-    margin: 0 auto;
-    width: 200px;
     font-weight: bold;
     color: #ECBA08;
 }
@@ -162,6 +166,17 @@ section {
 }
 
 @media only screen and (min-width: 700px) {
+    nav {
+        float: right;
+        ul {
+            display: flex;
+            a {
+                display: block;
+                padding: 0 1em;
+            }
+        }
+    }
+    
     .featured, .portfolio {
         text-align: left;
     }
@@ -205,6 +220,10 @@ section {
 @media only screen and (min-width: 900px) {
     .hero {
         height: 90vh;
+
+        h4{
+            letter-spacing: 1em;
+        }
     }
 
     .nav-container {
@@ -214,6 +233,7 @@ section {
 
         header {
             background: #0F3D4C;
+
         }
     }
 
@@ -261,10 +281,6 @@ section {
         }
     }
 
-    .meet {
-        margin: unset;
-    }
-
     .hero-design {
         display: unset;
         margin-left: -56%;
@@ -298,9 +314,6 @@ section {
         padding: 6em 8em 6em 10em;
     }
 
-    .meet {
-        padding-left: 16.5em;
-    }
 }
 
 @media only screen and (min-width: 1500px){
@@ -320,9 +333,6 @@ section {
         padding: 6em 8em 6em 10em;
     }
 
-    .meet {
-        padding-left: 16.5em;
-    }
 }
 
 .eclipse {
@@ -341,4 +351,21 @@ section {
         }
     }
     
+}
+
+@media only screen and (max-width: 700px) {
+    nav {
+        visibility: hidden;
+    }
+
+    .toggle div {
+        width: 25px;  
+        height: 3px;
+        background-color: white;
+        margin: 5px;
+    }
+
+    .logo {
+        font-size: medium;
+    }
 }

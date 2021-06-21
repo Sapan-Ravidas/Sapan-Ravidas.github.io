@@ -73,9 +73,11 @@ header nav ul a {
   padding: 4em;
 }
 
+.hero h4 {
+  letter-spacing: 0.2em;
+}
+
 .meet {
-  margin: 0 auto;
-  width: 200px;
   font-weight: bold;
   color: #ECBA08;
 }
@@ -169,6 +171,18 @@ section {
 }
 
 @media only screen and (min-width: 700px) {
+  nav {
+    float: right;
+  }
+  nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  nav ul a {
+    display: block;
+    padding: 0 1em;
+  }
   .featured, .portfolio {
     text-align: left;
   }
@@ -210,6 +224,9 @@ section {
 @media only screen and (min-width: 900px) {
   .hero {
     height: 90vh;
+  }
+  .hero h4 {
+    letter-spacing: 1em;
   }
   .nav-container {
     display: -ms-grid;
@@ -261,9 +278,6 @@ section {
     font-size: 3em;
     line-height: 1.2em;
   }
-  .meet {
-    margin: unset;
-  }
   .hero-design {
     display: unset;
     margin-left: -56%;
@@ -294,9 +308,6 @@ section {
   .hero .content {
     padding: 6em 8em 6em 10em;
   }
-  .meet {
-    padding-left: 16.5em;
-  }
 }
 
 @media only screen and (min-width: 1500px) {
@@ -311,9 +322,6 @@ section {
   }
   .hero .content {
     padding: 6em 8em 6em 10em;
-  }
-  .meet {
-    padding-left: 16.5em;
   }
 }
 
@@ -348,6 +356,21 @@ section {
               transform: translate(521px, 536px);
       z-index: 5;
     }
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  nav {
+    visibility: hidden;
+  }
+  .toggle div {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px;
+  }
+  .logo {
+    font-size: medium;
   }
 }
 /*# sourceMappingURL=main.css.map */
