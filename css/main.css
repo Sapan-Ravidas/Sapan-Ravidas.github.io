@@ -41,6 +41,7 @@ header {
 header .logo {
   color: white;
   font-weight: bold;
+  font-size: x-large;
 }
 
 header nav {
@@ -265,7 +266,7 @@ section {
   }
   .hero-design {
     display: unset;
-    margin-left: -50%;
+    margin-left: -56%;
     margin-top: 15%;
     width: 100%;
   }
@@ -283,7 +284,12 @@ section {
     padding: 2em 10em 2em 0;
   }
   section {
-    padding: 10em 10em 4em 10em;
+    padding: 10em 10em 0 10em;
+  }
+  section ul li a img {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
   }
   .hero .content {
     padding: 6em 8em 6em 10em;
@@ -298,7 +304,7 @@ section {
     padding: 2em 2em 2em 15em;
   }
   .social-header {
-    padding: 2em 15em 2em 0;
+    padding: 2em 15em 0.2em 0.2em;
   }
   section {
     padding: 10em 15em 4em 10em;
