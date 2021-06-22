@@ -363,14 +363,5 @@ section {
   nav {
     visibility: hidden;
   }
-  .toggle div {
-    width: 25px;
-    height: 3px;
-    background-color: white;
-    margin: 5px;
-  }
-  .logo {
-    font-size: medium;
-  }
 }
 /*# sourceMappingURL=main.css.map */
