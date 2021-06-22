@@ -90,6 +90,10 @@ section {
 
 .featured {
     position: relative;  
+    margin-right: 0.5em;
+    img {
+        border-radius: 1em;
+    }
 }
 
 .subtitle {
@@ -133,18 +137,6 @@ section {
        display: grid;
        place-content: center;
        margin: 0 auto;
-
-       &.one {
-           width: 50px;
-       }
-
-       &.two{
-           width: 100px;
-       }
-
-       &three {
-           width: 60px;
-       }
    }
 
    .skill-title {
@@ -158,11 +150,12 @@ section {
 
 .portfolio {
     background: #f7f7f7;
+    
 }
 
 .portfolio-container a img{
     border-radius: 1em;
-    margin-bottom: 2em;
+    margin-bottom: 1em;
 }
 
 @media only screen and (min-width: 700px) {
@@ -175,6 +168,10 @@ section {
                 padding: 0 1em;
             }
         }
+    }
+
+    .featured {
+        margin-right: 1.5em;
     }
     
     .featured, .portfolio {
@@ -197,8 +194,7 @@ section {
     }
 
     .skills {
-        margin-top: -5em;
-        margin-top: -7em;
+        margin-top: 0em;
         padding-top: 7em;
     }
 
@@ -210,6 +206,7 @@ section {
 
     .portfolio{
         padding-top: 7em;
+        margin-right: 2em;
     }
 
     .portfolio-container img {
@@ -219,7 +216,7 @@ section {
 
 @media only screen and (min-width: 900px) {
     .hero {
-        height: 90vh;
+        height: 80vh;
 
         h4{
             letter-spacing: 1em;
@@ -271,7 +268,7 @@ section {
 
         .content {
             background: #133B51;
-            padding: 6em 8e, 6em 4em;
+            padding: 6em 8em 6em 6em;
             //text-align: left;
 
             h1 {
@@ -286,6 +283,10 @@ section {
         margin-left: -56%;
         margin-top: 15%;
         width: 100%;
+    }
+
+    .portfolio {
+        margin-right: 0em;
     }
 
     .portfolio img {
@@ -303,8 +304,9 @@ section {
         padding: 2em 10em 2em 0;
     }
 
+
     section {
-        padding: 10em 10em 0 10em;
+        padding: 5em 10em 0 10em;
         ul li a img {
             width: fit-content;
         }
@@ -314,9 +316,18 @@ section {
         padding: 6em 8em 6em 10em;
     }
 
+    .skills {
+        padding-top: 1em;
+        margin-top: 1em;    
+    }
+
 }
 
 @media only screen and (min-width: 1500px){
+    .skill-container {
+        padding-top: 3.5em;
+    }
+
     header {
         padding: 2em 2em 2em 15em;
     }
@@ -332,7 +343,6 @@ section {
     .hero .content {
         padding: 6em 8em 6em 10em;
     }
-
 }
 
 .eclipse {

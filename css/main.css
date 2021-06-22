@@ -94,6 +94,11 @@ section {
 
 .featured {
   position: relative;
+  margin-right: 0.5em;
+}
+
+.featured img {
+  border-radius: 1em;
 }
 
 .subtitle {
@@ -141,18 +146,6 @@ section {
   margin: 0 auto;
 }
 
-.skill-container ul li .icon-container.one {
-  width: 50px;
-}
-
-.skill-container ul li .icon-container.two {
-  width: 100px;
-}
-
-.skill-container ul li .icon-containerthree {
-  width: 60px;
-}
-
 .skill-container ul li .skill-title {
   font-weight: bold;
 }
@@ -167,7 +160,7 @@ section {
 
 .portfolio-container a img {
   border-radius: 1em;
-  margin-bottom: 2em;
+  margin-bottom: 1em;
 }
 
 @media only screen and (min-width: 700px) {
@@ -182,6 +175,9 @@ section {
   nav ul a {
     display: block;
     padding: 0 1em;
+  }
+  .featured {
+    margin-right: 1.5em;
   }
   .featured, .portfolio {
     text-align: left;
@@ -202,8 +198,7 @@ section {
     margin-top: 1em;
   }
   .skills {
-    margin-top: -5em;
-    margin-top: -7em;
+    margin-top: 0em;
     padding-top: 7em;
   }
   .skill-container ul {
@@ -215,6 +210,7 @@ section {
   }
   .portfolio {
     padding-top: 7em;
+    margin-right: 2em;
   }
   .portfolio-container img {
     margin-left: 2em;
@@ -223,7 +219,7 @@ section {
 
 @media only screen and (min-width: 900px) {
   .hero {
-    height: 90vh;
+    height: 80vh;
   }
   .hero h4 {
     letter-spacing: 1em;
@@ -272,7 +268,7 @@ section {
   }
   .hero .content {
     background: #133B51;
-    padding: 6em 8e, 6em 4em;
+    padding: 6em 8em 6em 6em;
   }
   .hero .content h1 {
     font-size: 3em;
@@ -283,6 +279,9 @@ section {
     margin-left: -56%;
     margin-top: 15%;
     width: 100%;
+  }
+  .portfolio {
+    margin-right: 0em;
   }
   .portfolio img {
     float: right;
@@ -298,7 +297,7 @@ section {
     padding: 2em 10em 2em 0;
   }
   section {
-    padding: 10em 10em 0 10em;
+    padding: 5em 10em 0 10em;
   }
   section ul li a img {
     width: -webkit-fit-content;
@@ -308,9 +307,16 @@ section {
   .hero .content {
     padding: 6em 8em 6em 10em;
   }
+  .skills {
+    padding-top: 1em;
+    margin-top: 1em;
+  }
 }
 
 @media only screen and (min-width: 1500px) {
+  .skill-container {
+    padding-top: 3.5em;
+  }
   header {
     padding: 2em 2em 2em 15em;
   }
